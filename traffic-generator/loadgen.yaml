@@ -42,7 +42,7 @@ spec:
           done;']
         env:
         - name: FRONTEND_ADDR
-          value: "shopping:3000"
+          value: "acme.tanzuworld.com"
       containers:
       - name: main
         image: docker.io/vmwareallspark/acme-load-gen:latest
@@ -51,7 +51,7 @@ spec:
         - containerPort: 8089
         env:
         - name: FRONTEND_ADDR
-          value: "shopping:3000"
+          value: "acme.tanzuworld.com"
         resources:
           requests:
             cpu: 300m
