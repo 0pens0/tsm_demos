@@ -24,4 +24,4 @@ spec:
       metric:
         name: p99Latency
         scaleUp: 500
-        scaleDown: 300
+        scaleDown: 500
