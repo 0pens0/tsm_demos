@@ -23,7 +23,7 @@ spec:
       gracePeriodSeconds: 90
       metric:
         name: p90Latency
-        scaleUp: 500
+        scaleUp: 700
         scaleDown: 400
         windowSeconds: 60
 
