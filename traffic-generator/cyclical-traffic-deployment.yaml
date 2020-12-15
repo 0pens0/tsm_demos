@@ -2,6 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: cyclical-traffic
+  namespace: loadgen
 data:
   apply_cyclical_traffic.sh: "#!/bin/bash\n\nwhile [ /bin/true ]; do\n\tkubectl scale
     deploy -n acme --replicas=1 loadgenerator\n\tsleep 600\n\tkubectl scale deploy
@@ -12,6 +13,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: local-kubectl-scale-deploy
+  namespace: loadgen
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
@@ -35,6 +37,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: local-kubectl-scale-deploy
+    namespace: loadgen
 roleRef:
   kind: ClusterRole
   name: scale-deployments
@@ -44,6 +47,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: acme-cyclical-traffic
+  namespace: loadgen
 spec:
   replicas: 1
   selector:
