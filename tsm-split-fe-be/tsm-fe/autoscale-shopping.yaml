@@ -22,8 +22,8 @@ spec:
     trigger:
       gracePeriodSeconds: 90
       metric:
-        name: p99Latency
+        name: p90Latency
         scaleUp: 500
-        scaleDown: 300
+        scaleDown: 400
         windowSeconds: 60
 
