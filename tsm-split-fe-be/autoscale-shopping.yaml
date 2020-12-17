@@ -26,4 +26,3 @@ spec:
         scaleUp: 700
         scaleDown: 400
         windowSeconds: 60
-

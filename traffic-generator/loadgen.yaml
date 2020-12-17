@@ -45,7 +45,7 @@ spec:
           value: "acme.tanzuworld.com"
       containers:
       - name: main
-        image: docker.io/vmwareallspark/acme-load-gen:latest
+        image: harbor.tanzuworld.com/apps/acme-load-gen
         imagePullPolicy: Always
         ports:
         - containerPort: 8089
