@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
         - name: users-mongo
-          image: mongo:4
+          image: harbor.tanzuworld.com/acme/mongo:4
           resources:
             {}
           ports:

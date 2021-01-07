@@ -170,7 +170,13 @@ data:
         """
         total_runtime = 1200
         stages = [
-            {"duration": 300, "users": 20, "spawn_rate": 5},
+            {"duration": 300, "users": 50, "spawn_rate": 5},
+            {"duration": 300, "users": 50, "spawn_rate": 5},
+            {"duration": 300, "users": 50, "spawn_rate": 5},
+            {"duration": 300, "users": 50, "spawn_rate": 5},
+            {"duration": 300, "users": 50, "spawn_rate": 5},
+            {"duration": 300, "users": 50, "spawn_rate": 5},
+            {"duration": 300, "users": 50, "spawn_rate": 5},
             {"duration": 300, "users": 50, "spawn_rate": 5},
         ]
     
