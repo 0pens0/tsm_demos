@@ -38,7 +38,7 @@ spec:
         service: shopping
     spec:
       containers:
-      - image: gcr.io/vmwarecloudadvocacy/acmeshop-front-end:latest
+      - image: harbor.tanzuworld.com/acme/acmeshop-front-end
         name: shopping
         env:
         - name: FRONTEND_PORT

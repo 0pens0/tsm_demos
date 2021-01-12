@@ -39,7 +39,7 @@ spec:
       - name: acmefit-users-data
         emptyDir: {}
       containers:
-      - image: gcr.io/vmwarecloudadvocacy/acmeshop-user
+      - image: harbor.tanzuworld.com/acme/acmeshop-user
         name: users
         env:
         - name: USERS_DB_HOST
