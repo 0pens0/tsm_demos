@@ -43,13 +43,13 @@ spec:
         - name: FRONTEND_PORT
           value: '3000'
         - name: USERS_HOST
-          value: 'users.demo.local'
+          value: 'users.demo.com'
         - name: CATALOG_HOST
-          value: 'catalog.demo.local'
+          value: 'catalog.demo.com'
         - name: ORDER_HOST
-          value: 'order.demo.local'
+          value: 'order.demo.com'
         - name: CART_HOST
-          value: 'cart.demo.local'
+          value: 'cart.demo.com'
         - name: USERS_PORT
           value: '8081'
         - name: CATALOG_PORT

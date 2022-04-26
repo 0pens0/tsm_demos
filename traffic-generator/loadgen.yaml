@@ -42,7 +42,7 @@ spec:
           done;']
         env:
         - name: FRONTEND_ADDR
-          value: "acme.tanzuworld.com"
+          value: "shopping:3000"
       containers:
       - name: main
         image: harbor.tanzuworld.com/apps/acme-load-gen
@@ -51,7 +51,7 @@ spec:
         - containerPort: 8089
         env:
         - name: FRONTEND_ADDR
-          value: "acme.tanzuworld.com"
+          value: "shopping:3000"
         resources:
           requests:
             cpu: 300m
