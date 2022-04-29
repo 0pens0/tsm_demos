@@ -45,7 +45,7 @@ spec:
           value: "shopping:3000"
       containers:
       - name: main
-        image: harbor.tanzuworld.com/apps/acme-load-gen
+        image: docker.io/vmwareallspark/acme-load-gen:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8089
